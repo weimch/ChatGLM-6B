@@ -23,6 +23,9 @@ import os
 import sys
 import json
 
+# 防止追踪
+os.environ["WANDB_DISABLED"] = "true"
+
 import numpy as np
 from datasets import load_dataset
 import jieba 
